@@ -57,6 +57,7 @@ var order = () => {
         element.classList.contains("done") ? done.push(element) : toDo.push(element)
     })
     //funcion que devuelve un arreglo SPRED
+    //3 puntos No hay límite al número de substrings entre paréntesis que se puedan utilizar.
     return [...toDo, ...done];
 }
 
