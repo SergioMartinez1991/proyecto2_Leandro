@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF8">
+    <title>Segundo proyecto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+    <script src="diary.js" type="text/javascript" defer></script>
+</head>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <img class="imgLogo" src="./icons/Logo.jpeg" alt="Bootstrap" width="10%" height="10%">
+
+        <section class="navBtn">
+            <ul class="navbar-nav">
+                <!-- <a id="btnCitas" href="./diary/diary.html">Citas</a> -->
+                <a id="btnDate" href="#diary"> <strong>Citas</strong>  </a>
+            </ul>
+        </section>
+    </div>
+</nav>
+</header>
+
+<body background="./icons/fons.webp">
+    <section id="divSection">
+        <main>
+            <aside id="aside-principal" style="background-color:s#a51919 ;">
+                <p class="refText" align="center">
+                    <strong> ¿Sabías que nutrición, no es precisamente lo mismo que alimentación? </strong></h4>
+                    <br>
+                    La nutrición se refiere a los nutrientes que componen los alimentos,
+                    implica los procesos que suceden en tu cuerpo después de comer,
+                    es decir la obtención, asimilación y digestión de los nutrimientos
+                    por el organismo. Mientras que la alimentación es la elección,
+                    preparación y consumo de alimentos, lo cual tiene mucha relación
+                    con el entorno, las tradiciones, la economía y el lugar en donde vives.
+                    La alimentación saludable cumple con necesidades nutricionales que
+                    necesita el cuerpo, para mantener una buena salud. Además, comer
+                    sano te protege de sufrir enfermedades como obesidad, azúcar en
+                    la sangre y presión alta. Por el contrario, un alimento "no saludable"
+                    aporta poco valor nutricional y tiene muchas calorías pues usualmente son
+                    ricos en grasas y azúcares.
+                </p>
+            </aside>
+            <section id="section-principal">
+                <h1 >pagina principal</h1>
+                <article>
+                    <header>
+                        <hgroup>
+                            <h2>Titulo la noticia uno</h2>
+                            <H3>Subtitulo de la noticia</H3>
+                        </hgroup>
+                    </header>
+                    <figure>
+                        <ficaction>
+                            Atrapados por google
+                        </ficaction>
+                    </figure>
+                    <p>Noticia 1</p>
+                    <p>Seguimos hablando de noticia uno</p>
+                    <p>Terminamos de hablar de la noticia uno</p>
+                    <footer>
+                        <P>Comentarios que realice el usuario</P>
+                    </footer>
+                </article>
+
+                <article id="lendro">
+                    <header>
+                        <h2>Titulo la noticia</h2>
+                        <H3>Subtitulo de la noticia</H3>
+                    </header>
+
+                    <p>Noticia 1</p>
+                    <p>Seguimos hablando de noticia dos</p>
+                    <p>Terminamos de hablar de la noticia dos</p>
+                    <footer>
+                        <P>Comentarios que realice el usuario</P>
+                    </footer>
+                </article>
+                <article>
+                    <header>
+                        <h2>Titulo la noticia</h2>
+                        <H3>Subtitulo de la noticia</H3>
+                    </header>
+                    <p>Noticia 1</p>
+                    <p>Seguimos hablando de noticia tres</p>
+                    <p>Terminamos de hablar de la noticia tres</p>
+                    <footer>
+                        <P>Comentarios que realice el usuario</P>
+                        <section id="diary">
+                            <div class="list">
+                                <div class="date">
+                                    <div class="dateRight">
+                                        <div id="dateText"></div>
+                                        <div id="dateNumber"></div>
+                                        <div id="dateMonth"></div>
+                                        <div id="dateYear"></div>
+                                    </div>
+                                    <div id="dateText"></div>
+                                </div>
+                                <form onsubmit="addNewTask(event)">
+                                    <input type="text" name="taskText" placeholder="Nueva tarea">
+                                    <button type="submit" class="addTaskButton">+</button>
+                                    <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>
+
+                                </form>
+                                <div id="tasksContainer"></div>
+                            </div>
+                        </section>
+                    </footer>
+                </article>
+
+            </section>
+        </main>
+        <footer id="footer-principal">
+            copyrigh 2022. Todos los derechos reservados
+        </footer>
+    </section>
+
+</body>
+
+</html>
