@@ -7,7 +7,6 @@ aside {
 }
 
 
-
 #refText{
     align-items: center;
 }
@@ -28,6 +27,7 @@ aside {
 }
 
 #section-principal {
+    text-align: center;
     margin-left: 200px;
     padding-top: 15px;
     padding-left: 15px;
